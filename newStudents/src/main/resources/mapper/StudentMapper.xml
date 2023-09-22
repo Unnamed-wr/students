@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--namespace = 接口的全限定符-->
+<mapper namespace="com.allspark.students.mapper.StudentMapper">
+    <resultMap id="Student" type="Student">
+        <result property="sclass" column="class_num"></result>
+        <result property="qqNumber" column="qq_number"></result>
+        <result property="phoneNumber" column="phone_number"></result>
+    </resultMap>
+
+    <insert id="insertStudent" >
+        insert into students (name,major,class_num,qq_number,phone_number,direction,learned,level,notes)
+        values (#{name},#{major},#{sclass},#{qqNumber},#{phoneNumber},#{direction},#{learned},#{level},#{notes});
+    </insert>
+</mapper>

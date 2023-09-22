@@ -1,0 +1,23 @@
+#server配置
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+
+#连接池配置
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql:///newstudents
+    username: root
+    password: 852995
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+mybatis:
+  type-aliases-package: com.allspark.students.pojo
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  configuration:
+    auto-mapping-behavior: full
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
