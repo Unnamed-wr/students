@@ -5,21 +5,23 @@ import com.sun.istack.internal.NotNull;
 import lombok.Data;
 import org.springframework.lang.Nullable;
 
+import javax.validation.constraints.NotBlank;
+
 @Data
 public class Student {
-    @NotNull
+    @NotBlank
     private String name;
-    @NotNull
+    @NotBlank
     private String major;
-    @NotNull
+    @NotBlank
     private String sclass;
     @Nullable
     private String qqNumber;
     @Nullable
     private String phoneNumber;
-    @NotNull
+    @NotBlank
     private String direction;
-    @NotNull
+    @NotBlank
     private String learned;
     @Nullable
     private String level="无";

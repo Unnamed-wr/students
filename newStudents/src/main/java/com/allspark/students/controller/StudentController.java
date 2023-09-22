@@ -21,12 +21,12 @@ public class StudentController {
     public String insertStudent(@Validated @RequestBody Student student, BindingResult result){
         System.out.println("student = " + student + ", result = " + result);
         if(result.hasErrors()){
-            return "baomingshibai";
+            return "报名失败";
         }
         int rows = studentService.saveStudent(student);
         if(rows>0){
             return "报名成功啦！10月7日不见不散！";
         }
-        return "shibai";
+        return "失败";
         }
 }
