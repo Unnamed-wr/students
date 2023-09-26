@@ -1,7 +1,7 @@
 package com.allspark.students.pojo;
 
 
-import com.sun.istack.internal.NotNull;
+
 import lombok.Data;
 import org.springframework.lang.Nullable;
 
