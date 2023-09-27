@@ -27,6 +27,10 @@ public class Student {
     private String level="无";
     @Nullable
     private String notes="无";
+    @NotBlank
+    private String day;
+    @NotBlank
+    private String time;
 
     public Student() {
     }
@@ -43,6 +47,8 @@ public class Student {
                 ", learned='" + learned + '\'' +
                 ", level='" + level + '\'' +
                 ", notes='" + notes + '\'' +
+                ", day='" + day + '\'' +
+                ", time='" + time + '\'' +
                 '}';
     }
 }

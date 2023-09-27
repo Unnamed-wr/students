@@ -25,7 +25,7 @@ public class StudentController {
         }
         int rows = studentService.saveStudent(student);
         if(rows>0){
-            return "报名成功啦！10月7日不见不散！";
+            return "报名成功啦！在约定时间不见不散！";
         }
         return "失败";
         }

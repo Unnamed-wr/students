@@ -10,7 +10,7 @@
     </resultMap>
 
     <insert id="insertStudent" >
-        insert into students (name,major,class_num,qq_number,phone_number,direction,learned,level,notes)
-        values (#{name},#{major},#{sclass},#{qqNumber},#{phoneNumber},#{direction},#{learned},#{level},#{notes});
+        insert into students (name,major,class_num,qq_number,phone_number,direction,learned,level,notes,day,time)
+        values (#{name},#{major},#{sclass},#{qqNumber},#{phoneNumber},#{direction},#{learned},#{level},#{notes},#{day},#{time});
     </insert>
 </mapper>

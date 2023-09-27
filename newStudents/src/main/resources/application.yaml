@@ -9,9 +9,9 @@ server:
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql:///newstudents
+    url: jdbc:mysql://localhost:3306/newstudents
     username: root
-    password: 852995
+    password: xmz120807
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 
